@@ -1,0 +1,19 @@
+# 依赖目录
+node_modules/
+
+# 编译输出（如果你运行了 npm run build）
+dist/
+build/
+
+# 本地环境变量
+.env
+.env.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 编辑器配置
+.vscode/
+.idea/

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #483332;
+  position: relative;
+  z-index:-2;
+}
+
+.canvas {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 保证UI在canvas之上 */
+main {
+  z-index: 2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 一些更大的字体 */
+.custom-text-size {
+  font-size: 10rem;
+  line-height: 1.1;
+}
+
+.qibao {
+  font-size: 12rem;
+  line-height: 1.1; 
+  letter-spacing: 2rem;
+}
+
+/* 七宝标签的样式 */
+.annotation {
+  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0 0 0 0.09px white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1.5px;
+  font-weight: 300;
+  background: rgb(43, 18, 22);
+  color: white;
+  padding: 0.5px 0.5px;
+  border-radius: 2px;
+  letter-spacing: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.annotation:hover {
+  box-shadow: inset 250px 0 0 0 white;
+  color: black;
+}
+
+.camera-background {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* 确保背景在其他内容下方 */
+}
