@@ -27,8 +27,8 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone <你的仓库地址>
-cd <项目文件夹名称>
+git clone https://github.com/3271130/silk-road-3d-website.git
+cd silk-road-3d-website
 ```
 
 ### 2. 安装依赖
